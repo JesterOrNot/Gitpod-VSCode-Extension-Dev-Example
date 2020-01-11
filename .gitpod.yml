@@ -12,3 +12,7 @@ tasks:
       npm install &&
       npm install -g vsce &&
       echo "y" | vsce package
+
+vscode:
+  extensions:
+    - Sean.helloworld@0.0.1:fQyKzYlZ3SNMmgbOYVMXxA==
