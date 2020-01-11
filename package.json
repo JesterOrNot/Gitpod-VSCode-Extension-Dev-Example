@@ -3,7 +3,7 @@
 	"displayName": "helloworld",
 	"publisher": "Sean",
 	"description": "My First VSCode Extension!",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -11,15 +11,20 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+        "onCommand:extension.ls"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
+				"title": "SeanExt: Hello World"
+			},
+            {
+                "command": "extension.ls",
+                "title": "SeanExt: ls"
+            }
 		]
 	},
 	"scripts": {
