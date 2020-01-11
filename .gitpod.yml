@@ -8,5 +8,5 @@ ports:
   - port: 5900
     onOpen: ignore
 tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
+  - init: npm install
+    command: code ./helloworld
