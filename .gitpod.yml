@@ -12,8 +12,9 @@ tasks:
       npm install &&
       npm install -g vsce &&
       echo "y" | vsce package;
-      /usr/bin/code &&
+    command: >
       /usr/bin/code --install-extension helloworld*
+      /usr/bin/code &&
 vscode:
   extensions:
     - Sean.helloworld@0.0.2:Mj+iYu7eJXobeMLpWzUo0Q==
