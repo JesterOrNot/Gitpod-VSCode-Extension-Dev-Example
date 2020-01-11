@@ -8,5 +8,4 @@ ports:
   - port: 5900
     onOpen: ignore
 tasks:
-  - init: npm install
-    command: unalias code && code .
+  - init: vsce package
