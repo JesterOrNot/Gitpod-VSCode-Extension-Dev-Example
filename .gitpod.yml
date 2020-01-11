@@ -12,4 +12,8 @@ tasks:
       npm install &&
       npm install -g vsce &&
       echo "y" | vsce package &&
-      mv *.vsix /var/vsix/
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-debug@0.24.0:4bjzZag4ZW2bFcv6qiRCEg==
+    - Sean.helloworld@0.0.1:06AfByinrblOZJaKpXRyCw==
