@@ -9,4 +9,4 @@ ports:
     onOpen: ignore
 tasks:
   - init: npm install
-    command: code ./helloworld
+    command: code .
