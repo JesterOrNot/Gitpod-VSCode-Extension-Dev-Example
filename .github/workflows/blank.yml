@@ -13,4 +13,4 @@ jobs:
       run: |
         sudo npm install
         sudo npm install -g vsce
-        sudo echo "y" | vsce package
+        echo "y" | sudo vsce package
