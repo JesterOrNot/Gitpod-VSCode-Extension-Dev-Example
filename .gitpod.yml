@@ -8,5 +8,5 @@ ports:
   - port: 5900
     onOpen: ignore
 tasks:
-  - init: npm install
+  - init: npm install && unalias code
     command: code .
