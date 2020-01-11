@@ -11,4 +11,5 @@ tasks:
   - init: >
       npm install &&
       npm install -g vsce &&
-      echo "y" | vsce package
+      echo "y" | vsce package &&
+      mv *.vsix /var/vsix/
