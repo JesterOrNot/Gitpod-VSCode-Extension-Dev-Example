@@ -1,54 +1,54 @@
 {
-	"name": "helloworld",
-	"displayName": "helloworld",
-	"publisher": "Sean",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/JesterOrNot/Gitpod-VSCode-Extension-Dev.git"
-	},
-	"license": "ISC",
-	"description": "My First VSCode Extension!",
-	"version": "0.0.2",
-	"engines": {
-		"vscode": "^1.41.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld",
-		"onCommand:extension.ls"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "SeanExt: Hello World"
-			},
-			{
-				"command": "extension.ls",
-				"title": "SeanExt: ls"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "7.1.1",
-		"@types/mocha": "5.2.7",
-		"@types/node": "12.12.24",
-		"@types/vscode": "1.41.0",
-		"glob": "7.1.6",
-		"mocha": "6.2.2",
-		"tslint": "5.20.1",
-		"typescript": "3.7.4",
-		"vsce": "1.71.0",
-		"vscode-test": "1.3.0"
-	}
+  "name": "helloworld",
+  "displayName": "helloworld",
+  "publisher": "Sean",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JesterOrNot/Gitpod-VSCode-Extension-Dev.git"
+  },
+  "license": "ISC",
+  "description": "My First VSCode Extension!",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.helloWorld",
+    "onCommand:extension.ls"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "SeanExt: Hello World"
+      },
+      {
+        "command": "extension.ls",
+        "title": "SeanExt: ls"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "7.1.1",
+    "@types/mocha": "5.2.7",
+    "@types/node": "12.12.24",
+    "@types/vscode": "1.41.0",
+    "glob": "7.1.6",
+    "mocha": "6.2.2",
+    "tslint": "5.20.1",
+    "typescript": "3.7.4",
+    "vsce": "1.71.0",
+    "vscode-test": "1.3.0"
+  }
 }
