@@ -11,7 +11,7 @@ tasks:
   - init: >
       npm install &&
       npm install -g vsce &&
-      echo "y" | vsce package
+      echo "y" | vsce package;
       /usr/bin/code --install-extension helloworld*
     command: code .
 vscode:
