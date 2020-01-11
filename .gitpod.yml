@@ -8,4 +8,7 @@ ports:
   - port: 5900
     onOpen: ignore
 tasks:
-  - init: npm install && vsce package
+  - init: >
+      npm install &&
+      npm install -g vsce &&
+      echo "y" | vsce package
