@@ -12,7 +12,7 @@ tasks:
       npm install &&
       npm install -g vsce &&
       echo "y" | vsce package
-  - command: alias code=code; code --install-extension helloworld* && code
+  - command: alias code=code && code --install-extension helloworld* && code
 vscode:
   extensions:
     - Sean.helloworld@0.0.2:Mj+iYu7eJXobeMLpWzUo0Q==
