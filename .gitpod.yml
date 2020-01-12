@@ -13,5 +13,5 @@ tasks:
       npm install -g vsce &&
       echo "y" | vsce package;
     command: >
-      /usr/bin/code --install-extension helloworld* &&
+      /usr/bin/code --install-extension *.vsix &&
       /usr/bin/code
