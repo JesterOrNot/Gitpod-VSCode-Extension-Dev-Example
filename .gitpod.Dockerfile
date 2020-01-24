@@ -1,5 +1,8 @@
 FROM gitpod/workspace-full-vnc
 
+
+ENV GITPOD_STATIC_PLUGINS=/workspace/=vsix
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -; \

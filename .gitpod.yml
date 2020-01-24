@@ -12,6 +12,8 @@ tasks:
       npm install &&
       npm install -g vsce &&
       echo "y" | vsce package;
+      mkdir /workspace/vsix
+      mv *.vsix /workspace/vsix
     command: >
       /usr/bin/code --install-extension *.vsix &&
       /usr/bin/code
