@@ -1,7 +1,9 @@
 FROM gitpod/workspace-full-vnc
 
+USER gitpod
 
-ENV GITPOD_STATIC_PLUGINS=/workspace/=vsix
+RUN mkdir /workspace/visx
+ENV GITPOD_STATIC_PLUGINS=/workspace/vsix
 
 ARG DEBIAN_FRONTEND=noninteractive
 
